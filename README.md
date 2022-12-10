@@ -42,10 +42,21 @@ Some rows in the data don't have a label or "Predicted Value", these data points
 We use ```Pandas DataFrames``` to save the data as csv files, then pickle them.
 
 ## Additional Datasets:
-In addition to the feature columns provided by the CDC Over Dose Death dataset, other datasets might be useful in predicting the OD Death rate per state, specifically we look at two additional feature datasets:
+In addition to the feature columns provided by the CDC Over Dose Death dataset, other datasets might be useful in predicting the OD Death rate per state, we determined a number of factors and found data sets for:
 
-### Weather Dataset:
-Over dose deaths might be influenced by the weather: the colder, gloomier months might contribute to an increase in over dose deaths. We download the weather data from NOAA to use as additional features in our project <https://www.ncdc.noaa.gov/cdo-web/datasets>
+- Tax Rate
+- Unemployment Rate
+- Cost of Living Compared to the Average
+- High School Graduation Rate
+- GDP Per Capita
+- Life Expectancy
+- Average Age
+- Poverty Rate
+- Violent Crime Rate
+- Population
+## Statistical Analysis
+### Correlation Scatter Plots
+We charted the datasets against one another to see the correlation between the various factors.
 
-### Rent to Income Dataset:
-Another dataset that might contribute to the over dose death rate is the rent to income ratio data. From a psychology point of view, socio-economic standing has an influence in how people deal with stressors in life. The worse the socio-economic standing, the more over dose deaths can be expected. We download the income by zipcode data from <https://www.incomebyzipcode.com/>, and the rent by zipcode data from Redfin here <https://www.redfin.com/news/data-center/>
+### Linear Regression
+We ran linear regression on the drug overdose deaths vs the additional datasets to find an initial baseline model. The model was compared to the neural net models to see if there were any improvements.
