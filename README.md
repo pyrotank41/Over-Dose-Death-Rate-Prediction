@@ -1,5 +1,4 @@
-# CS547 -- Deep Dive Project
-# Project 6: Drug Overdose Deaths
+# Drug Overdose Deaths prediction model using feedforward nural netowrk
 
 Link to final video: https://drive.google.com/file/d/1B8JM9CFXc5RNNFRphfxhX7_CjluFyR8r/view?usp=sharing
 
